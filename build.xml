@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <project name="BankAccount" default="build">
-	<target name="build" depends="prepare,lint,phpunit,phpdox" />
+	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc" />
 
 	<target name="clean" description="Cleanup build artifacts">
 		<delete dir="${basedir}/build/coverage" />
@@ -31,6 +31,14 @@
 
 	<target name="phpdox" description="Generate documentation with PHPDox">
 		<exec executable="phpdox" />
+	</target>
+
+	<target name="phploc" description="Measure project size using PHPLoc">
+		<exec executable="phploc">
+			<arg value="--log-csv" />
+			<arg value="${basedir}/build/logs/phploc.csv" />
+			<arg path="${basedir}/src" />
+		</exec>
 	</target>
 
 	<target name="phpab" description="Generate autoloader scripts">
