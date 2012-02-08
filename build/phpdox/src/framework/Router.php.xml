@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="Router.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/Router.php" size="716" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="c260378da7a5b1f306c8ade113dc3181b6dce77c"/>
+  <class full="Router" name="Router" final="false" abstract="false" start="6" end="32">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <extends class="HashMap" full="HashMap"/>
+    <method name="route" start="8" end="31" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="request" type="object" class="Request" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/view" file="BankAccountView.php" realpath="/home/brettmack/gits/Jenkins-Test/src/view/BankAccountView.php" size="313" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="8015e80c2d988f6e91cfad9e02b46c7137b893a3"/>
+  <class full="BankAccountView" name="BankAccountView" final="false" abstract="false" start="6" end="16">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="view"/>
+    </docblock>
+    <extends class="View" full="View"/>
+    <method name="render" start="8" end="15" abstract="false" final="false" static="false" visibility="public"/>
+  </class>
+</file>

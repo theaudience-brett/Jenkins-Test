@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="Response.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/Response.php" size="300" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="f234795d75f4858fa672c8680167f47e8ca1c9f5"/>
+  <class full="Response" name="Response" final="false" abstract="false" start="6" end="19">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <extends class="HashMap" full="HashMap"/>
+    <member name="headers" static="false" visibility="protected">
+      <default>array (
+)</default>
+    </member>
+    <method name="addHeader" start="10" end="13" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="header" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+    <method name="getHeaders" start="15" end="18" abstract="false" final="false" static="false" visibility="public"/>
+  </class>
+</file>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/controller" file="BankAccountListController.php" realpath="/home/brettmack/gits/Jenkins-Test/src/controller/BankAccountListController.php" size="309" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="1d009add5b1aab8e1a089f28a9adb00d1cbf03de"/>
+  <class full="BankAccountListController" name="BankAccountListController" final="false" abstract="false" start="6" end="14">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="controller"/>
+    </docblock>
+    <extends class="BankAccountController" full="BankAccountController"/>
+    <method name="execute" start="8" end="13" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="request" type="object" class="Request" optional="false" byreference="false"/>
+      <parameter name="response" type="object" class="Response" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="View.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/View.php" size="257" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="b8afbe2260dbd07032ca53b026a5264a6d9f4c53"/>
+  <class full="View" name="View" final="false" abstract="true" start="6" end="16">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <member name="response" static="false" visibility="protected">
+      <default>null</default>
+    </member>
+    <constructor name="__construct" start="10" end="13" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="response" type="object" class="Response" optional="false" byreference="false"/>
+    </constructor>
+    <method name="render" start="15" end="15" abstract="true" final="false" static="false" visibility="public"/>
+  </class>
+</file>

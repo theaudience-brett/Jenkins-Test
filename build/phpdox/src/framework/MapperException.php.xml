@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="MapperException.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/MapperException.php" size="117" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="67ed6bd675bb313d78a6628034e01d6008a5c88d"/>
+  <class full="MapperException" name="MapperException" final="false" abstract="false" start="6" end="8">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <extends class="RuntimeException" full="RuntimeException"/>
+  </class>
+</file>

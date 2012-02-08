@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="IdentityMap.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/IdentityMap.php" size="944" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="9fcc5a6d239b3e40251af81ecb876b02845374b9"/>
+  <class full="IdentityMap" name="IdentityMap" final="false" abstract="false" start="6" end="49">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <member name="idToObject" static="false" visibility="protected">
+      <default>array (
+)</default>
+    </member>
+    <member name="objectToId" static="false" visibility="protected">
+      <default>null</default>
+    </member>
+    <constructor name="__construct" start="11" end="14" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="set" start="16" end="20" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="id" type="{unknown}" optional="false" byreference="false"/>
+      <parameter name="object" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+    <method name="hasObject" start="22" end="25" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="object" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+    <method name="getId" start="27" end="34" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="object" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+    <method name="hasId" start="36" end="39" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="id" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+    <method name="getObject" start="41" end="48" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="id" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>

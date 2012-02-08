@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="ControllerFactory.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/ControllerFactory.php" size="850" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="6117c4d3c25cfc93349e20d8c770e5354bb5144f"/>
+  <class full="ControllerFactory" name="ControllerFactory" final="false" abstract="false" start="6" end="37">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <member name="mapperFactory" static="false" visibility="protected">
+      <default>null</default>
+    </member>
+    <constructor name="__construct" start="10" end="13" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="mapperFactory" type="object" class="MapperFactory" optional="false" byreference="false"/>
+    </constructor>
+    <method name="getController" start="15" end="36" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="name" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>

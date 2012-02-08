@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="MapperFactory.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/MapperFactory.php" size="480" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="5ae0fb38c70395abe874dbf7b0dfc60f0cc56974"/>
+  <class full="MapperFactory" name="MapperFactory" final="false" abstract="false" start="6" end="28">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <member name="pdo" static="false" visibility="protected">
+      <default>null</default>
+    </member>
+    <constructor name="__construct" start="10" end="13" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="pdo" type="object" class="PDO" optional="false" byreference="false"/>
+    </constructor>
+    <method name="getMapper" start="15" end="27" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="name" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>

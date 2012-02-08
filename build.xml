@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <project name="BankAccount" default="build">
-	<target name="build" depends="prepare,phpunit" />
+	<target name="build" depends="prepare,lint,phpunit,phpdox" />
 
 	<target name="clean" description="Cleanup build artifacts">
 		<delete dir="${basedir}/build/coverage" />
 		<delete dir="${basedir}/build/logs" />
+		<delete dir="${basedir}/build/api" />
 	</target>
 
-	<target name="prepare" depends="clean,phpab,lint" description="Prepare for build">
+	<target name="prepare" depends="clean,phpab" description="Prepare for build">
 		<mkdir dir="${basedir}/build/coverage" />
 		<mkdir dir="${basedir}/build/logs" />
+		<mkdir dir="${basedir}/build/api" />
 	</target>
 
 	<target name="lint" description="Lint check PHP for syntax errors">
@@ -25,6 +27,10 @@
 				<include name="**/*.php" />
 			</fileset>
 		</apply>
+	</target>
+
+	<target name="phpdox" description="Generate documentation with PHPDox">
+		<exec executable="phpdox" />
 	</target>
 
 	<target name="phpab" description="Generate autoloader scripts">

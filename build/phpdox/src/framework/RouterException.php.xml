@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="RouterException.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/RouterException.php" size="117" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="e0154c0ac720bc7efa923abc38b2b051011fc5b2"/>
+  <class full="RouterException" name="RouterException" final="false" abstract="false" start="6" end="8">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <extends class="RuntimeException" full="RuntimeException"/>
+  </class>
+</file>

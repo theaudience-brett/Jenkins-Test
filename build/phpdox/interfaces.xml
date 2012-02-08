@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interfaces xmlns="http://xml.phpdox.de/src#">
+  <interface full="Controller" name="Controller" final="false" start="6" end="9" xml="src/framework/Controller.php.xml" src="/home/brettmack/gits/Jenkins-Test/src/framework/Controller.php"/>
+</interfaces>

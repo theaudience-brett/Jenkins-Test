@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="HashMap.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/HashMap.php" size="383" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="4b38eae5b9b756bd07c10e766848acdf55b792b6"/>
+  <class full="HashMap" name="HashMap" final="false" abstract="false" start="6" end="23">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <member name="values" static="false" visibility="protected">
+      <default>array (
+)</default>
+    </member>
+    <method name="set" start="10" end="13" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="key" type="{unknown}" optional="false" byreference="false"/>
+      <parameter name="value" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+    <method name="get" start="15" end="22" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="key" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>

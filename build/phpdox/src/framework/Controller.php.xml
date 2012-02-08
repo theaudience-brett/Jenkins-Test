@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="Controller.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/Controller.php" size="158" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="b265758ffca0f57b6077b3ff05d2bce2a887075f"/>
+  <interface full="Controller" name="Controller" final="false" start="6" end="9">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <method name="execute" start="8" end="8" abstract="true" final="false" static="false" visibility="public">
+      <parameter name="request" type="object" class="Request" optional="false" byreference="false"/>
+      <parameter name="response" type="object" class="Response" optional="false" byreference="false"/>
+    </method>
+  </interface>
+</file>

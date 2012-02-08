@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/model" file="BankAccount.php" realpath="/home/brettmack/gits/Jenkins-Test/src/model/BankAccount.php" size="665" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="3493344d11a9f4a516a2d1c3929ba1c39af5d76d"/>
+  <class full="BankAccount" name="BankAccount" final="false" abstract="false" start="6" end="37">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="model"/>
+    </docblock>
+    <member name="balance" static="false" visibility="protected">
+      <default>0</default>
+    </member>
+    <method name="getBalance" start="10" end="13" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="depositMoney" start="15" end="20" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="amount" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+    <method name="withdrawMoney" start="22" end="27" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="amount" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+    <method name="setBalance" start="29" end="36" abstract="false" final="false" static="false" visibility="protected">
+      <parameter name="balance" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>

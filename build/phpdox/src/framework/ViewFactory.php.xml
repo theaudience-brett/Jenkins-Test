@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="ViewFactory.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/ViewFactory.php" size="272" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="b37ccf19916963b091be7638b4c83c167a982796"/>
+  <class full="ViewFactory" name="ViewFactory" final="false" abstract="false" start="6" end="16">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <method name="getView" start="8" end="15" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="name" type="{unknown}" optional="false" byreference="false"/>
+      <parameter name="response" type="object" class="Response" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>

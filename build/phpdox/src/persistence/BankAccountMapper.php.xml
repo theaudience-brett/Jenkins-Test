@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/persistence" file="BankAccountMapper.php" realpath="/home/brettmack/gits/Jenkins-Test/src/persistence/BankAccountMapper.php" size="2443" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="d2a85e748fa61b207a2d78f3155826afb03401a9"/>
+  <class full="BankAccountMapper" name="BankAccountMapper" final="false" abstract="false" start="6" end="104">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="persistence"/>
+    </docblock>
+    <member name="db" static="false" visibility="protected">
+      <default>null</default>
+    </member>
+    <member name="identityMap" static="false" visibility="protected">
+      <default>null</default>
+    </member>
+    <constructor name="__construct" start="11" end="15" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="db" type="object" class="PDO" optional="false" byreference="false"/>
+    </constructor>
+    <method name="getAllIds" start="17" end="26" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="findById" start="28" end="58" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="id" type="{unknown}" optional="false" byreference="false"/>
+    </method>
+    <method name="insert" start="60" end="74" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="ba" type="object" class="BankAccount" optional="false" byreference="false"/>
+    </method>
+    <method name="update" start="76" end="89" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="ba" type="object" class="BankAccount" optional="false" byreference="false"/>
+    </method>
+    <method name="delete" start="91" end="103" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="ba" type="object" class="BankAccount" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>

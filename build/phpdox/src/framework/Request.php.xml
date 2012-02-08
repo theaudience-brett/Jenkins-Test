@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file xmlns="http://xml.phpdox.de/src#">
+  <head path="src/framework" file="Request.php" realpath="/home/brettmack/gits/Jenkins-Test/src/framework/Request.php" size="1111" time="2012-02-08T05:28:22-08:00" unixtime="1328707702" sha1="0dfe5b8c74a686f1b603d2ca5a3ca4c74355dbd5"/>
+  <class full="Request" name="Request" final="false" abstract="false" start="6" end="40">
+    <docblock>
+      <description compact=""/>
+      <package value="bankaccount"/>
+      <subpackage value="framework"/>
+    </docblock>
+    <extends class="HashMap" full="HashMap"/>
+    <member name="data" static="false" visibility="protected">
+      <default>null</default>
+    </member>
+    <constructor name="__construct" start="10" end="23" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="server" type="array" optional="true" byreference="false">
+        <default>array (
+)</default>
+      </parameter>
+      <parameter name="get" type="array" optional="true" byreference="false">
+        <default>array (
+)</default>
+      </parameter>
+      <parameter name="post" type="array" optional="true" byreference="false">
+        <default>array (
+)</default>
+      </parameter>
+      <parameter name="cookie" type="array" optional="true" byreference="false">
+        <default>array (
+)</default>
+      </parameter>
+      <parameter name="files" type="array" optional="true" byreference="false">
+        <default>array (
+)</default>
+      </parameter>
+      <parameter name="env" type="array" optional="true" byreference="false">
+        <default>array (
+)</default>
+      </parameter>
+    </constructor>
+    <method name="__call" start="25" end="39" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="type" type="{unknown}" optional="false" byreference="false"/>
+      <parameter name="arguments" type="array" optional="false" byreference="false"/>
+    </method>
+  </class>
+</file>
