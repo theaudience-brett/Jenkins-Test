@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <project name="BankAccount" default="build">
-	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc,pdepend" />
+	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc,pdepend,phpcpd" />
 
 	<target name="clean" description="Cleanup build artifacts">
 		<delete dir="${basedir}/build/coverage" />
@@ -39,6 +39,14 @@
 		<exec executable="phploc">
 			<arg value="--log-csv" />
 			<arg value="${basedir}/build/logs/phploc.csv" />
+			<arg path="${basedir}/src" />
+		</exec>
+	</target>
+
+	<target name="phpcpd" description="Find code duplication with PHPCPD">
+		<exec executable="phpcpd">
+			<arg value="--log-pmd" />
+			<arg value="${basedir}/build/logs/pmd-cpd.xml" />
 			<arg path="${basedir}/src" />
 		</exec>
 	</target>
