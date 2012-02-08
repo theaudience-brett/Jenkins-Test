@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <project name="BankAccount" default="build">
-	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc" />
+	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc,pdepend" />
 
 	<target name="clean" description="Cleanup build artifacts">
 		<delete dir="${basedir}/build/coverage" />
 		<delete dir="${basedir}/build/logs" />
 		<delete dir="${basedir}/build/api" />
+		<delete dir="${basedir}/build/pdepend" />
 	</target>
 
 	<target name="prepare" depends="clean,phpab" description="Prepare for build">
 		<mkdir dir="${basedir}/build/coverage" />
 		<mkdir dir="${basedir}/build/logs" />
 		<mkdir dir="${basedir}/build/api" />
+		<mkdir dir="${basedir}/build/pdepend" />
 	</target>
 
 	<target name="lint" description="Lint check PHP for syntax errors">
@@ -37,6 +39,15 @@
 		<exec executable="phploc">
 			<arg value="--log-csv" />
 			<arg value="${basedir}/build/logs/phploc.csv" />
+			<arg path="${basedir}/src" />
+		</exec>
+	</target>
+
+	<target name="pdepend" description="Calculate software metrics using PHP_Depend">
+		<exec executable="pdepend">
+			<arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
+			<arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
+			<arg value="--overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg" />
 			<arg path="${basedir}/src" />
 		</exec>
 	</target>
