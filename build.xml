@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <project name="BankAccount" default="build">
-	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc,pdepend,phpcpd,phpcs" />
+	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc,pdepend,phpcpd,phpcs,phpcb" />
 
 	<target name="clean" description="Cleanup build artifacts">
 		<delete dir="${basedir}/build/coverage" />
@@ -66,6 +66,17 @@
 			<arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
 			<arg value="--standard=${basedir}/build/phpcs.xml" />
 			<arg path="${basedir}/src" />
+		</exec>
+	</target>
+
+	<target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
+		<exec executable="phpcb">
+			<arg value="--log" />
+			<arg path="${basedir}/build/logs" />
+			<arg value="--source" />
+			<arg path="${basedir}/src" />
+			<arg value="--output" />
+			<arg path="${basedir}/build/code-browser" />
 		</exec>
 	</target>
 
