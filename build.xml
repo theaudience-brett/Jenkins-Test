@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<project name="BankAccount" default="build">
+<project name="BankAccount" basedir="." default="build">
+
+	<!--<target name="build" depends="prepare,lint,phpunit,phpdox,phploc,pdepend,phpcpd,phpcs,phpmd,phpcb" />-->
 	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc,pdepend,phpcpd,phpcs,phpmd,phpcb" />
 
 	<target name="clean" description="Cleanup build artifacts">
-		<delete dir="${basedir}/build/coverage" />
-		<delete dir="${basedir}/build/logs" />
-		<delete dir="${basedir}/build/api" />
-		<delete dir="${basedir}/build/pdepend" />
+		<delete dir="./build/coverage" />
+		<delete dir="./build/logs" />
+		<delete dir="./build/api" />
+		<delete dir="./build/pdepend" />
 	</target>
 
 	<target name="prepare" depends="clean,phpab" description="Prepare for build">
-		<mkdir dir="${basedir}/build/coverage" />
-		<mkdir dir="${basedir}/build/logs" />
-		<mkdir dir="${basedir}/build/api" />
-		<mkdir dir="${basedir}/build/pdepend" />
+		<mkdir dir="./build/coverage" />
+		<mkdir dir="./build/logs" />
+		<mkdir dir="./build/api" />
+		<mkdir dir="./build/pdepend" />
 	</target>
 
 	<target name="lint" description="Lint check PHP for syntax errors">
-		<apply executable="php" failonerror="true">
-			<arg value="-l" />
-			
-			<fileset dir="${basedir}/src">
+		<phplint haltonfailure="true">
+			<fileset dir="./src">
 				<include name="**/*.php" />
 			</fileset>
 
-			<fileset dir="${basedir}/tests">
+			<fileset dir="./tests">
 				<include name="**/*.php" />
 			</fileset>
-		</apply>
+		</phplint>
 	</target>
 
 	<target name="phpdox" description="Generate documentation with PHPDox">
-		<exec executable="phpdox" />
+		<exec executable="phpdox" passthru="true" />
 	</target>
 
 	<target name="phploc" description="Measure project size using PHPLoc">
-		<exec executable="phploc">
+		<exec executable="phploc" passthru="true">
 			<arg value="--log-csv" />
-			<arg value="${basedir}/build/logs/phploc.csv" />
-			<arg path="${basedir}/src" />
+			<arg value="./build/logs/phploc.csv" />
+			<arg path="./src" />
 		</exec>
 	</target>
 
 	<target name="phpcpd" description="Find code duplication with PHPCPD">
-		<exec executable="phpcpd">
+		<exec executable="phpcpd" passthru="true">
 			<arg value="--log-pmd" />
-			<arg value="${basedir}/build/logs/pmd-cpd.xml" />
-			<arg path="${basedir}/src" />
+			<arg value="./build/logs/pmd-cpd.xml" />
+			<arg path="./src" />
 		</exec>
 	</target>
 
 	<target name="phpmd" description="Perform project mess detection using PHPMD">
-		<exec executable="phpmd">
-			<arg path="${basedir}/src" />
+		<exec executable="phpmd" passthru="true">
+			<arg path="./src" />
 			<arg value="xml" />
-			<arg value="${basedir}/build/phpmd.xml" />
+			<arg value="./build/phpmd.xml" />
 			<arg value="--reportfile" />
-			<arg value="${basedir}/build/logs/pmd.xml" />
+			<arg value="./build/logs/pmd.xml" />
 		</exec>
 	</target>
 
 	<target name="pdepend" description="Calculate software metrics using PHP_Depend">
-		<exec executable="pdepend">
-			<arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
-			<arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
-			<arg value="--overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg" />
-			<arg path="${basedir}/src" />
+		<exec executable="pdepend" passthru="true">
+			<arg value="--jdepend-xml=./build/logs/jdepend.xml" />
+			<arg value="--jdepend-chart=./build/pdepend/dependencies.svg" />
+			<arg value="--overview-pyramid=./build/pdepend/overview-pyramid.svg" />
+			<arg path="./src" />
 		</exec>
 	</target>
 
 	<target name="phpcs" description="Find coding standard violations using PHP_CodeSniffer">
-		<exec executable="phpcs" output="/dev/null">
+		<exec executable="phpcs">
 			<arg value="--report=checkstyle" />
-			<arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
-			<arg value="--standard=${basedir}/build/phpcs.xml" />
-			<arg path="${basedir}/src" />
+			<arg value="--report-file=./build/logs/checkstyle.xml" />
+			<arg value="--standard=./build/phpcs.xml" />
+			<arg path="./src" />
 		</exec>
 	</target>
 
 	<target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
-		<exec executable="phpcb">
+		<exec executable="phpcb" passthru="true">
 			<arg value="--log" />
-			<arg path="${basedir}/build/logs" />
+			<arg path="./build/logs" />
 			<arg value="--source" />
-			<arg path="${basedir}/src" />
+			<arg path="./src" />
 			<arg value="--output" />
-			<arg path="${basedir}/build/code-browser" />
+			<arg path="./build/code-browser" />
 		</exec>
 	</target>
 
 	<target name="phpab" description="Generate autoloader scripts">
-		<exec executable="phpab">
+		<exec executable="phpab" passthru="true">
 			<arg value="--output" />
-			<arg path="${basedir}/src/autoload.php" />
+			<arg path="./src/autoload.php" />
 			<arg value="--template" />
-			<arg path="${basedir}/build/src_autoload.php.in" />
-			<arg path="${basedir}/src" />
+			<arg path="./build/src_autoload.php.in" />
+			<arg path="./src" />
 		</exec>
 
-		<exec executable="phpab">
+		<exec executable="phpab" passthru="true">
 			<arg value="--output" />
-			<arg path="${basedir}/tests/autoload.php" />
+			<arg path="./tests/autoload.php" />
 			<arg value="--template" />
-			<arg path="${basedir}/build/tests_autoload.php.in" />
-			<arg path="${basedir}/tests" />
+			<arg path="./build/tests_autoload.php.in" />
+			<arg path="./tests" />
 		</exec>
 	</target>
 
 	<target name="phpunit" description="Run unit tests with PHPUnit">
-		<exec executable="phpunit" failonerror="true" />
+		<exec executable="phpunit" passthru="true" checkreturn="true" />
 	</target>
 </project>

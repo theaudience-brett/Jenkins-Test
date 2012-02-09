@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="BankAccount" tests="45" assertions="66" failures="0" errors="0" time="0.317492">
-    <testsuite name="BankAccountControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountControllerTest.php" tests="3" assertions="9" failures="0" errors="0" time="0.083940">
-      <testcase name="testReturnsBankAccountViewWhenBankAccountIsSpecified" class="BankAccountControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountControllerTest.php" line="19" assertions="4" time="0.063579"/>
-      <testcase name="testExceptionIsRaisedWhenBankAccountIsNotSpecified" class="BankAccountControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountControllerTest.php" line="50" assertions="2" time="0.010169"/>
-      <testcase name="testExceptionIsRaisedWhenBankAccountIsNotFound" class="BankAccountControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountControllerTest.php" line="65" assertions="3" time="0.010192"/>
+  <testsuite name="BankAccount" tests="45" assertions="66" failures="0" errors="0" time="0.329386">
+    <testsuite name="BankAccountControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountControllerTest.php" tests="3" assertions="9" failures="0" errors="0" time="0.085632">
+      <testcase name="testReturnsBankAccountViewWhenBankAccountIsSpecified" class="BankAccountControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountControllerTest.php" line="19" assertions="4" time="0.064314"/>
+      <testcase name="testExceptionIsRaisedWhenBankAccountIsNotSpecified" class="BankAccountControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountControllerTest.php" line="50" assertions="2" time="0.010745"/>
+      <testcase name="testExceptionIsRaisedWhenBankAccountIsNotFound" class="BankAccountControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountControllerTest.php" line="65" assertions="3" time="0.010573"/>
     </testsuite>
-    <testsuite name="BankAccountListControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountListControllerTest.php" tests="1" assertions="3" failures="0" errors="0" time="0.016057">
-      <testcase name="testReturnsListOfBankAccounts" class="BankAccountListControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountListControllerTest.php" line="19" assertions="3" time="0.016057"/>
+    <testsuite name="BankAccountListControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountListControllerTest.php" tests="1" assertions="3" failures="0" errors="0" time="0.016624">
+      <testcase name="testReturnsListOfBankAccounts" class="BankAccountListControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/controller/BankAccountListControllerTest.php" line="19" assertions="3" time="0.016624"/>
     </testsuite>
-    <testsuite name="ControllerFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ControllerFactoryTest.php" tests="3" assertions="6" failures="0" errors="0" time="0.016494">
-      <testcase name="testBankAccountControllerCanBeConstructed" class="ControllerFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ControllerFactoryTest.php" line="32" assertions="2" time="0.007929"/>
-      <testcase name="testBankAccountListControllerCanBeConstructed" class="ControllerFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ControllerFactoryTest.php" line="43" assertions="2" time="0.004996"/>
-      <testcase name="testDefaultControllerCanBeConstructed" class="ControllerFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ControllerFactoryTest.php" line="54" assertions="2" time="0.003569"/>
+    <testsuite name="ControllerFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ControllerFactoryTest.php" tests="3" assertions="6" failures="0" errors="0" time="0.017369">
+      <testcase name="testBankAccountControllerCanBeConstructed" class="ControllerFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ControllerFactoryTest.php" line="32" assertions="2" time="0.008597"/>
+      <testcase name="testBankAccountListControllerCanBeConstructed" class="ControllerFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ControllerFactoryTest.php" line="43" assertions="2" time="0.004978"/>
+      <testcase name="testDefaultControllerCanBeConstructed" class="ControllerFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ControllerFactoryTest.php" line="54" assertions="2" time="0.003794"/>
     </testsuite>
-    <testsuite name="FrontControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/FrontControllerTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004106">
-      <testcase name="testDispatchingWorksCorrectly" class="FrontControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/FrontControllerTest.php" line="14" assertions="1" time="0.004106"/>
+    <testsuite name="FrontControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/FrontControllerTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004102">
+      <testcase name="testDispatchingWorksCorrectly" class="FrontControllerTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/FrontControllerTest.php" line="14" assertions="1" time="0.004102"/>
     </testsuite>
-    <testsuite name="HashMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/HashMapTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.005368">
-      <testcase name="testIsInitiallyEmpty" class="HashMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/HashMapTest.php" line="10" assertions="1" time="0.001870"/>
-      <testcase name="testSettingDataWorks" class="HashMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/HashMapTest.php" line="23" assertions="1" time="0.001964"/>
-      <testcase name="testExceptionIsRaisedWhenAccessingAnElementThatDoesNotExist" class="HashMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/HashMapTest.php" line="34" assertions="1" time="0.001534"/>
+    <testsuite name="HashMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/HashMapTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.005605">
+      <testcase name="testIsInitiallyEmpty" class="HashMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/HashMapTest.php" line="10" assertions="1" time="0.002000"/>
+      <testcase name="testSettingDataWorks" class="HashMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/HashMapTest.php" line="23" assertions="1" time="0.001983"/>
+      <testcase name="testExceptionIsRaisedWhenAccessingAnElementThatDoesNotExist" class="HashMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/HashMapTest.php" line="34" assertions="1" time="0.001622"/>
     </testsuite>
-    <testsuite name="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" tests="6" assertions="8" failures="0" errors="0" time="0.012542">
-      <testcase name="testIsInitiallyEmpty" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="17" assertions="2" time="0.003021"/>
-      <testcase name="testObjectCanBeAdded" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="30" assertions="2" time="0.002433"/>
-      <testcase name="testObjectCanBeRetrievedById" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="48" assertions="1" time="0.001935"/>
-      <testcase name="testExceptionIsRaisedForNonExistantId" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="58" assertions="1" time="0.001616"/>
-      <testcase name="testIdCanBeRetrievedForObject" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="68" assertions="1" time="0.001950"/>
-      <testcase name="testExceptionIsRaisedForNonExistantObject" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="78" assertions="1" time="0.001587"/>
+    <testsuite name="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" tests="6" assertions="8" failures="0" errors="0" time="0.013268">
+      <testcase name="testIsInitiallyEmpty" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="17" assertions="2" time="0.003293"/>
+      <testcase name="testObjectCanBeAdded" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="30" assertions="2" time="0.002564"/>
+      <testcase name="testObjectCanBeRetrievedById" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="48" assertions="1" time="0.002138"/>
+      <testcase name="testExceptionIsRaisedForNonExistantId" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="58" assertions="1" time="0.001634"/>
+      <testcase name="testIdCanBeRetrievedForObject" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="68" assertions="1" time="0.001991"/>
+      <testcase name="testExceptionIsRaisedForNonExistantObject" class="IdentityMapTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/IdentityMapTest.php" line="78" assertions="1" time="0.001648"/>
     </testsuite>
-    <testsuite name="MapperFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/MapperFactoryTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.003004">
-      <testcase name="testBankAccountMapperCanBeConstructed" class="MapperFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/MapperFactoryTest.php" line="20" assertions="1" time="0.001568"/>
-      <testcase name="testDefaultMapperCanBeConstructed" class="MapperFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/MapperFactoryTest.php" line="31" assertions="1" time="0.001436"/>
+    <testsuite name="MapperFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/MapperFactoryTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.003026">
+      <testcase name="testBankAccountMapperCanBeConstructed" class="MapperFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/MapperFactoryTest.php" line="20" assertions="1" time="0.001566"/>
+      <testcase name="testDefaultMapperCanBeConstructed" class="MapperFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/MapperFactoryTest.php" line="31" assertions="1" time="0.001460"/>
     </testsuite>
-    <testsuite name="RequestTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RequestTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.004966">
-      <testcase name="testRequestUriCanBeRetrieved" class="RequestTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RequestTest.php" line="11" assertions="1" time="0.001889"/>
-      <testcase name="testExceptionIsRaisedWhenRequestUriIsNotSet" class="RequestTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RequestTest.php" line="21" assertions="1" time="0.001542"/>
-      <testcase name="testExceptionIsRaisedWhenIllegalVariableTypeIsRequested" class="RequestTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RequestTest.php" line="31" assertions="1" time="0.001535"/>
+    <testsuite name="RequestTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RequestTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.005437">
+      <testcase name="testRequestUriCanBeRetrieved" class="RequestTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RequestTest.php" line="11" assertions="1" time="0.002039"/>
+      <testcase name="testExceptionIsRaisedWhenRequestUriIsNotSet" class="RequestTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RequestTest.php" line="21" assertions="1" time="0.001712"/>
+      <testcase name="testExceptionIsRaisedWhenIllegalVariableTypeIsRequested" class="RequestTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RequestTest.php" line="31" assertions="1" time="0.001686"/>
     </testsuite>
-    <testsuite name="ResponseTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ResponseTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.002598">
-      <testcase name="testNoHeadersAreInitiallySet" class="ResponseTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ResponseTest.php" line="10" assertions="1" time="0.001265"/>
-      <testcase name="testAddingHeadersWorks" class="ResponseTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ResponseTest.php" line="22" assertions="1" time="0.001333"/>
+    <testsuite name="ResponseTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ResponseTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.002808">
+      <testcase name="testNoHeadersAreInitiallySet" class="ResponseTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ResponseTest.php" line="10" assertions="1" time="0.001373"/>
+      <testcase name="testAddingHeadersWorks" class="ResponseTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ResponseTest.php" line="22" assertions="1" time="0.001435"/>
     </testsuite>
-    <testsuite name="RouterTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RouterTest.php" tests="3" assertions="7" failures="0" errors="0" time="0.013555">
-      <testcase name="testCorrectControllerIsSelected" class="RouterTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RouterTest.php" line="30" assertions="3" time="0.005031"/>
-      <testcase name="testExceptionWhenNoControllerCanBeSelected" class="RouterTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RouterTest.php" line="48" assertions="2" time="0.004525"/>
-      <testcase name="testExceptionWhenSomethingIsWrongWithTheValues" class="RouterTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RouterTest.php" line="59" assertions="2" time="0.003999"/>
+    <testsuite name="RouterTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RouterTest.php" tests="3" assertions="7" failures="0" errors="0" time="0.014341">
+      <testcase name="testCorrectControllerIsSelected" class="RouterTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RouterTest.php" line="30" assertions="3" time="0.005382"/>
+      <testcase name="testExceptionWhenNoControllerCanBeSelected" class="RouterTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RouterTest.php" line="48" assertions="2" time="0.004882"/>
+      <testcase name="testExceptionWhenSomethingIsWrongWithTheValues" class="RouterTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/RouterTest.php" line="59" assertions="2" time="0.004077"/>
     </testsuite>
-    <testsuite name="ViewFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ViewFactoryTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.001382">
-      <testcase name="testDefaultMapperCanBeConstructed" class="ViewFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ViewFactoryTest.php" line="10" assertions="1" time="0.001382"/>
+    <testsuite name="ViewFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ViewFactoryTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.001416">
+      <testcase name="testDefaultMapperCanBeConstructed" class="ViewFactoryTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ViewFactoryTest.php" line="10" assertions="1" time="0.001416"/>
     </testsuite>
-    <testsuite name="ViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ViewTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004025">
-      <testcase name="testViewObjectCanBeConstructed" class="ViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ViewTest.php" line="21" assertions="1" time="0.004025"/>
+    <testsuite name="ViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ViewTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004034">
+      <testcase name="testViewObjectCanBeConstructed" class="ViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/framework/ViewTest.php" line="21" assertions="1" time="0.004034"/>
     </testsuite>
-    <testsuite name="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" tests="5" assertions="5" failures="0" errors="0" time="0.009686">
-      <testcase name="testBalanceIsInitiallyZero" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="10" assertions="1" time="0.001808"/>
-      <testcase name="testBalanceCannotBecomeNegative" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="25" assertions="1" time="0.002265"/>
-      <testcase name="testBalanceCannotBecomeNegative2" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="37" assertions="1" time="0.001576"/>
-      <testcase name="testDepositingMoneyWorks" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="47" assertions="1" time="0.002039"/>
-      <testcase name="testWithdrawingMoneyWorks" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="59" assertions="1" time="0.001998"/>
+    <testsuite name="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" tests="5" assertions="5" failures="0" errors="0" time="0.010103">
+      <testcase name="testBalanceIsInitiallyZero" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="10" assertions="1" time="0.001967"/>
+      <testcase name="testBalanceCannotBecomeNegative" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="25" assertions="1" time="0.002360"/>
+      <testcase name="testBalanceCannotBecomeNegative2" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="37" assertions="1" time="0.001661"/>
+      <testcase name="testDepositingMoneyWorks" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="47" assertions="1" time="0.002068"/>
+      <testcase name="testWithdrawingMoneyWorks" class="BankAccountTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/model/BankAccountTest.php" line="59" assertions="1" time="0.002047"/>
     </testsuite>
-    <testsuite name="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" tests="9" assertions="11" failures="0" errors="0" time="0.118505">
-      <testcase name="testListOfBankAccountIdsCanBeRetrieved" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="40" assertions="1" time="0.029260"/>
-      <testcase name="testBankAccountCanBeFoundById" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="48" assertions="3" time="0.011389"/>
-      <testcase name="testExceptionIsRaisedWhenBankAccountCannotBeFoundById" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="63" assertions="1" time="0.008901"/>
-      <testcase name="testBankAccountCanBeInserted" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="71" assertions="1" time="0.014856"/>
-      <testcase name="testBankAccountCannotBeInsertedTwice" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="88" assertions="1" time="0.009749"/>
-      <testcase name="testBankAccountCanBeUpdated" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="99" assertions="1" time="0.013505"/>
-      <testcase name="testBankAccountThatDoesNotExistCannotBeUpdated" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="119" assertions="1" time="0.008758"/>
-      <testcase name="testBankAccountCanBeDeleted" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="128" assertions="1" time="0.013316"/>
-      <testcase name="testBankAccountThatDoesNotExistCannotBeDeleted" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="147" assertions="1" time="0.008771"/>
+    <testsuite name="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" tests="9" assertions="11" failures="0" errors="0" time="0.123186">
+      <testcase name="testListOfBankAccountIdsCanBeRetrieved" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="40" assertions="1" time="0.029652"/>
+      <testcase name="testBankAccountCanBeFoundById" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="48" assertions="3" time="0.011263"/>
+      <testcase name="testExceptionIsRaisedWhenBankAccountCannotBeFoundById" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="63" assertions="1" time="0.009347"/>
+      <testcase name="testBankAccountCanBeInserted" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="71" assertions="1" time="0.015780"/>
+      <testcase name="testBankAccountCannotBeInsertedTwice" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="88" assertions="1" time="0.010077"/>
+      <testcase name="testBankAccountCanBeUpdated" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="99" assertions="1" time="0.014239"/>
+      <testcase name="testBankAccountThatDoesNotExistCannotBeUpdated" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="119" assertions="1" time="0.009583"/>
+      <testcase name="testBankAccountCanBeDeleted" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="128" assertions="1" time="0.013990"/>
+      <testcase name="testBankAccountThatDoesNotExistCannotBeDeleted" class="BankAccountMapperTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/persistence/BankAccountMapperTest.php" line="147" assertions="1" time="0.009255"/>
     </testsuite>
-    <testsuite name="BankAccountListViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/view/BankAccountListViewTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.008408">
-      <testcase name="testIsRenderedCorrectly" class="BankAccountListViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/view/BankAccountListViewTest.php" line="10" assertions="2" time="0.008408"/>
+    <testsuite name="BankAccountListViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/view/BankAccountListViewTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.008843">
+      <testcase name="testIsRenderedCorrectly" class="BankAccountListViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/view/BankAccountListViewTest.php" line="10" assertions="2" time="0.008843"/>
     </testsuite>
-    <testsuite name="BankAccountViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/view/BankAccountViewTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.012856">
-      <testcase name="testIsRenderedCorrectly" class="BankAccountViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/view/BankAccountViewTest.php" line="10" assertions="2" time="0.012856"/>
+    <testsuite name="BankAccountViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/view/BankAccountViewTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.013591">
+      <testcase name="testIsRenderedCorrectly" class="BankAccountViewTest" file="/home/brettmack/gits/Jenkins-Test/tests/unit/view/BankAccountViewTest.php" line="10" assertions="2" time="0.013591"/>
     </testsuite>
   </testsuite>
 </testsuites>

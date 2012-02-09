@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1328717312">
-  <project timestamp="1328717312">
+<coverage generated="1328802829">
+  <project timestamp="1328802829">
     <file name="/home/brettmack/gits/Jenkins-Test/src/controller/BankAccountController.php">
       <class name="BankAccountController" namespace="global" fullPackage="bankaccount.controller" package="bankaccount" subpackage="controller">
         <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="15" coveredelements="15"/>
