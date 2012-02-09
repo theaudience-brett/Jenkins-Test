@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <project name="BankAccount" default="build">
-	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc,pdepend,phpcpd,phpcs,phpcb" />
+	<target name="build" depends="prepare,lint,phpunit,phpdox,phploc,pdepend,phpcpd,phpcs,phpmd,phpcb" />
 
 	<target name="clean" description="Cleanup build artifacts">
 		<delete dir="${basedir}/build/coverage" />
@@ -48,6 +48,14 @@
 			<arg value="--log-pmd" />
 			<arg value="${basedir}/build/logs/pmd-cpd.xml" />
 			<arg path="${basedir}/src" />
+		</exec>
+	</target>
+
+	<target name="phpmd" description="Perform project mess detection using PHPMD">
+		<exec executable="phpmd">
+			<arg path="${basedir}/src" />
+			<arg value="xml" />
+			<arg value="${basedir}/build/phpmd.xml" />
 		</exec>
 	</target>
 
