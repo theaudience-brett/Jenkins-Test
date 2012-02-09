@@ -1,8 +1,8 @@
 <?php
 spl_autoload_register(
    function($class) {
-      static $classes = null;
-      if ($classes === null) {
+      static $classes = NULL;
+      if ($classes === NULL) {
          $classes = array(
             ___CLASSLIST___
           );
