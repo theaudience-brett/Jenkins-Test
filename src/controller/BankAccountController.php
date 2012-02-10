@@ -15,7 +15,7 @@ class BankAccountController implements Controller
     public function execute(Request $request, Response $response)
     {
         try {
-            $id = $request->get('id')
+            $id = $request->get('id');
         }
 
         catch (OutOfBoundsException $e) {
